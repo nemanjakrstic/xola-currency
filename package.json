@@ -1,0 +1,32 @@
+{
+    "name": "xola-currency",
+    "version": "0.1.0",
+    "description": "Xola Currency Formatting Library",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "author": "Nemanja K. <nemanja.k@xola.com>",
+    "license": "MIT",
+    "scripts": {
+        "build": "tsc",
+        "format": "prettier --write src/**/*.ts",
+        "lint": "tslint -p tsconfig.json",
+        "test": "jest --config jestconfig.json --coverage",
+        "prepare": "npm run build"
+    },
+    "files": [
+        "lib/**/*"
+    ],
+    "keywords": [
+        "xola",
+        "currency"
+    ],
+    "devDependencies": {
+        "@types/jest": "^24.0.21",
+        "jest": "^24.9.0",
+        "prettier": "^1.18.2",
+        "ts-jest": "^24.1.0",
+        "tslint": "^5.20.0",
+        "tslint-config-prettier": "^1.18.0",
+        "typescript": "^3.6.4"
+    }
+}
